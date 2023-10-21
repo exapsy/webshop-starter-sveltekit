@@ -1,0 +1,18 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 255 115 179;
+    --color-secondary: 111 114 185;
+    /* ... */
+  }
+}
+
+@layer components {
+  .hover\:shadow-image:hover .image {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
